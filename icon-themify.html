@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- START: Head-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Pick Admin</title>
+        <link rel="shortcut icon" href="dist/images/favicon.ico" />
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
+
+        <!-- START: Template CSS-->
+        <link rel="stylesheet" href="dist/vendors/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="dist/vendors/jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" href="dist/vendors/jquery-ui/jquery-ui.theme.min.css">
+        <link rel="stylesheet" href="dist/vendors/simple-line-icons/css/simple-line-icons.css">        
+        <link rel="stylesheet" href="dist/vendors/flags-icon/css/flag-icon.min.css"> 
+
+        <!-- END Template CSS-->
+
+        <!-- START: Page CSS-->   
+        <link rel="stylesheet" href="dist/vendors/themify-icons/themify-icons.css">    
+        <!-- END: Page CSS-->
+
+        <!-- START: Custom CSS-->
+        <link rel="stylesheet" href="dist/css/main.css">
+        <!-- END: Custom CSS-->
+    </head>
+    <!-- END Head-->
+
+    <!-- START: Body--> 
+    <body id="main-container" class="default">
+        <!-- START: Pre Loader-->
+        <div class="se-pre-con">
+            <div class="loader"></div>
+        </div>
+        <!-- END: Pre Loader-->
+
+        <!-- START: Header-->
+        <div id="header-fix" class="header fixed-top">
+            <div class="site-width">
+                <nav class="navbar navbar-expand-lg  p-0">
+                    <div class="navbar-header  h-100 h4 mb-0 align-self-center logo-bar text-left">  
+                        <a href="index.html" class="horizontal-logo text-left">
+                            <svg height="20pt" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="matrix(.1 0 0 -.1 0 512)" fill="#1e3d73">
+                            <path d="m1450 4481-1105-638v-1283-1283l1106-638c1033-597 1139-654 1139-619 0 4-385 674-855 1489-470 814-855 1484-855 1488 0 8 1303 763 1418 822 175 89 413 166 585 190 114 16 299 13 408-5 100-17 231-60 314-102 310-156 569-509 651-887 23-105 23-331 0-432-53-240-177-460-366-651-174-175-277-247-738-512-177-102-322-189-322-193s104-188 231-407l231-400 46 28c26 15 360 207 742 428l695 402v1282 1282l-1105 639c-608 351-1107 638-1110 638s-502-287-1110-638z"/><path d="m2833 3300c-82-12-190-48-282-95-73-36-637-358-648-369-3-3 580-1022 592-1034 5-5 596 338 673 391 100 69 220 197 260 280 82 167 76 324-19 507-95 184-233 291-411 320-70 11-89 11-165 0z"/>
+                            </g>
+                            </svg> <span class="h4 font-weight-bold align-self-center mb-0 ml-auto">PICK</span>              
+                        </a>                   
+                    </div>
+                    <div class="navbar-header h4 mb-0 text-center h-100 collapse-menu-bar">
+                        <a href="#" class="sidebarCollapse" id="collapse"><i class="icon-menu"></i></a>
+                    </div>
+
+                    <form class="float-left d-none d-lg-block search-form">
+                        <div class="form-group mb-0 position-relative">
+                            <input type="text" class="form-control border-0 rounded bg-search pl-5" placeholder="Search anything...">
+                            <div class="btn-search position-absolute top-0">
+                                <a href="#"><i class="h6 icon-magnifier"></i></a>
+                            </div>
+                            <a href="#" class="position-absolute close-button mobilesearch d-lg-none" data-toggle="dropdown" aria-expanded="false"><i class="icon-close h5"></i>                               
+                            </a>
+
+                        </div>
+                    </form>
+                    <div class="navbar-right ml-auto h-100">
+                        <ul class="ml-auto p-0 m-0 list-unstyled d-flex top-icon h-100">
+                            <li class="d-inline-block align-self-center  d-block d-lg-none">
+                                <a href="#" class="nav-link mobilesearch" data-toggle="dropdown" aria-expanded="false"><i class="icon-magnifier h4"></i>                               
+                                </a>
+                            </li>                        
+
+                            <li class="dropdown align-self-center">
+                                <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false"><i class="icon-reload h4"></i>
+                                    <span class="badge badge-default"> <span class="ring">
+                                        </span><span class="ring-point">
+                                        </span> </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right border  py-0">
+                                    <li>
+                                        <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                            <div class="media">
+                                                <img src="dist/images/author.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
+                                                <div class="media-body">
+                                                    <p class="mb-0">john</p>
+                                                    <span class="text-success">New user registered.</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                            <div class="media">
+                                                <img src="dist/images/author2.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
+                                                <div class="media-body">
+                                                    <p class="mb-0">Peter</p>
+                                                    <span class="text-success">Server #12 overloaded.</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                            <div class="media">
+                                                <img src="dist/images/author3.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
+                                                <div class="media-body">
+                                                    <p class="mb-0">Bill</p>
+                                                    <span class="text-danger">Application error.</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li><a class="dropdown-item text-center py-2" href="#"> See All Tasks <i class="icon-arrow-right pl-2 small"></i></a></li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown align-self-center d-inline-block">
+                                <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false"><i class="icon-bell h4"></i>
+                                    <span class="badge badge-default"> <span class="ring">
+                                        </span><span class="ring-point">
+                                        </span> </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right border   py-0">
+                                    <li>
+                                        <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                            <div class="media">
+                                                <img src="dist/images/author.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle w-50">
+                                                <div class="media-body">
+                                                    <p class="mb-0 text-success">john send a message</p>
+                                                    12 min ago
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                            <div class="media">
+                                                <img src="dist/images/author2.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
+                                                <div class="media-body">
+                                                    <p class="mb-0 text-danger">Peter send a message</p>
+                                                    15 min ago
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                            <div class="media">
+                                                <img src="dist/images/author3.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
+                                                <div class="media-body">
+                                                    <p class="mb-0 text-warning">Bill send a message</p>
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li><a class="dropdown-item text-center py-2" href="#"> Read All Message <i class="icon-arrow-right pl-2 small"></i></a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown user-profile align-self-center d-inline-block">
+                                <a href="#" class="nav-link py-0" data-toggle="dropdown" aria-expanded="false"> 
+                                    <div class="media">                                   
+                                        <img src="dist/images/author.jpg" alt="" class="d-flex img-fluid rounded-circle" width="29">
+                                    </div>
+                                </a>
+
+                                <div class="dropdown-menu border dropdown-menu-right p-0">
+                                    <a href="" class="dropdown-item px-2 align-self-center d-flex">
+                                        <span class="icon-pencil mr-2 h6 mb-0"></span> Edit Profile</a>
+                                    <a href="" class="dropdown-item px-2 align-self-center d-flex">
+                                        <span class="icon-user mr-2 h6 mb-0"></span> View Profile</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="" class="dropdown-item px-2 align-self-center d-flex">
+                                        <span class="icon-support mr-2 h6  mb-0"></span> Help Center</a>
+                                    <a href="" class="dropdown-item px-2 align-self-center d-flex">
+                                        <span class="icon-globe mr-2 h6 mb-0"></span> Forum</a>
+                                    <a href="" class="dropdown-item px-2 align-self-center d-flex">
+                                        <span class="icon-settings mr-2 h6 mb-0"></span> Account Settings</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="" class="dropdown-item px-2 text-danger align-self-center d-flex">
+                                        <span class="icon-logout mr-2 h6  mb-0"></span> Sign Out</a>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- END: Header-->
+
+        <!-- START: Main Menu-->
+        <div class="sidebar">
+            <div class="site-width">
+
+                <!-- START: Menu-->
+                <ul id="side-menu" class="sidebar-menu">
+                    <li class="dropdown"><a href="#"><i class="icon-home mr-1"></i> Dashboard</a>                  
+                        <ul>
+                            <li><a href="index.html"><i class="icon-rocket"></i> Dashboard</a></li>
+                            <li><a href="index-account.html"><i class="icon-layers"></i> Account</a></li>
+                            <li><a href="index-analytic.html"><i class="icon-grid"></i> Analytic</a></li>
+                            <li><a href="index-covid.html"><i class="icon-earphones"></i> COVID</a></li>
+                            <li><a href="index-crypto.html"><i class="icon-support"></i> Crypto</a></li>
+                            <li><a href="index-ecommerce.html"><i class="icon-briefcase"></i> Ecommerce</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><i class="icon-organization mr-1"></i> Layout</a>
+                        <ul>
+                            <li class="dropdown"><a href="#"><i class="icon-options"></i>Horizontal</a>
+                                <ul class="sub-menu">
+                                    <li><a href="layout-horizontal.html"><i class="icon-energy"></i> Light</a></li>
+                                    <li><a href="layout-horizontal-semidark.html"><i class="icon-disc"></i> Semi Dark</a></li>
+                                    <li><a href="layout-horizontal-dark.html"><i class="icon-frame"></i> Dark</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#"><i class="icon-options-vertical"></i>Vertical</a>
+                                <ul class="sub-menu">
+                                    <li><a href="layout-vertical.html"><i class="icon-energy"></i> Light</a></li>
+                                    <li><a href="layout-vertical-semidark.html"><i class="icon-disc"></i> Semi Dark</a></li>
+                                    <li><a href="layout-vertical-dark.html"><i class="icon-frame"></i> Dark</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#"><i class="icon-grid"></i>Compact Menu</a>
+                                <ul class="sub-menu">
+                                    <li><a href="layout-compact.html"><i class="icon-energy"></i> Light</a></li>
+                                    <li><a href="layout-compact-semidark.html"><i class="icon-disc"></i> Semi Dark</a></li>
+                                    <li><a href="layout-compact-dark.html"><i class="icon-frame"></i> Dark</a></li>
+                                </ul>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><i class="icon-layers mr-1"></i> Web Apps</a>                  
+                        <ul>
+                            <li><a href="app-calendar.html"><i class="icon-calendar"></i> Calendar</a></li>
+                            <li><a href="app-chat.html"><i class="icon-speech"></i> Chats</a></li>
+                            <li><a href="app-to-do.html"><i class="icon-support"></i> Todo</a></li> 
+                            <li><a href="app-mail.html"><i class="icon-envelope"></i>Mailapp</a></li>
+                            <li><a href="app-filemanager.html"><i class="icon-folder"></i> File Manager</a></li>
+                            <li><a href="app-contactlist.html"><i class="icon-people"></i> Contact List</a></li>
+                            <li><a href="app-taskboard.html"><i class="icon-event"></i> Task Board</a></li>
+                            <li><a href="app-notes.html"><i class="icon-tag"></i> Notes</a></li> 
+                            <li><a href="app-invoicelist.html"><i class="icon-book-open"></i> Invoices</a></li>
+                        </ul>                   
+                    </li>
+
+                    <li class="dropdown"><a href="#"><i class="icon-cursor mr-1"></i> Elements</a>                 
+                        <ul>
+                            <li class="dropdown"><a href="#"><i class="icon-chart"></i>Charts</a>                                
+                                <ul class="sub-menu">                                
+                                    <li><a href="chart-morris.html"><i class="icon-energy"></i> Morris Chart</a></li>
+                                    <li><a href="chart-chartist.html"><i class="icon-disc"></i> Chartist js</a></li>
+                                    <li><a href="chart-echart.html"><i class="icon-frame"></i> eCharts</a></li>
+                                    <li><a href="chart-flot.html"><i class="icon-fire"></i> Flot Chart</a></li>
+                                    <li><a href="chart-knob.html"><i class="icon-shuffle"></i> Knob Chart</a></li>
+                                    <li class="dropdown"><a href="#" class="d-flex align-items-center"><i class="icon-control-pause"></i> Charts js</a>                                          
+                                        <ul class="sub-menu">
+                                            <li><a href="chartjs-bar.html"><i class="icon-energy"></i> Bar charts</a></li>
+                                            <li><a href="chartjs-line.html"><i class="icon-disc"></i> Line charts</a></li>
+                                            <li><a href="chartjs-area.html"><i class="icon-frame"></i> Area charts</a></li>
+                                            <li><a href="chartjs-other.html"><i class="icon-fire"></i> Doughnut, Pie, Polar charts</a></li>
+                                            <li><a href="chartjs-linear.html"><i class="icon-shuffle"></i> Linear scale</a></li>                                                                        
+                                        </ul>                                           
+                                    </li>
+                                    <li><a href="chart-sparkline.html"><i class="icon-graph"></i> Sparkline Chart</a></li>                            
+                                    <li><a href="chart-peity.html"><i class="icon-pie-chart"></i> Peity Chart</a></li>   
+                                    <li><a href="chart-google.html"><i class="icon-drawer"></i> Google Charts</a></li>
+                                    <li><a href="chart-apex.html"><i class="icon-magnet"></i> Apex Charts</a></li>
+                                    <li><a href="chart-c3.html"><i class="icon-hourglass"></i> C3 Charts</a></li>
+                                </ul>                               
+                            </li> 
+                            <li class="dropdown"><a href="#"><i class="icon-film"></i>Form</a>                              
+                                <ul class="sub-menu">
+                                    <li><a href="form-basic.html"><i class="icon-disc"></i> Basic Form</a></li>
+                                    <li><a href="form-layout.html"><i class="icon-cursor-move"></i> Form Layout</a></li>
+                                    <li><a href="form-validation.html"><i class="icon-star"></i> Form Validation</a></li>
+                                    <li class="dropdown"><a href="#" class="d-flex align-items-center"><i class="icon-film"></i> Form Elements</a>                                          
+                                        <ul class="sub-menu">
+                                            <li><a href="form-elements-switch.html"><i class="icon-energy"></i> Switch</a></li>
+                                            <li><a href="form-elements-checkbox.html"><i class="icon-disc"></i> Checkbox</a></li>
+                                            <li><a href="form-elements-radiobutton.html"><i class="icon-frame"></i> Radio</a></li>
+                                            <li><a href="form-elements-input.html"><i class="icon-fire"></i> Input</a></li>                                       
+                                        </ul>                                           
+                                    </li>
+                                    <li><a href="form-float-input.html"><i class="icon-symbol-male"></i> Float Input</a></li>
+                                    <li><a href="form-wizard.html"><i class="icon-loop"></i> Form Wizards</a></li>
+                                    <li><a href="form-upload.html"><i class="icon-pin"></i> Form Uploads</a></li>
+                                    <li><a href="form-mask.html"><i class="icon-check"></i> Form Mask</a></li>                            
+                                    <li><a href="form-dropzone.html"><i class="icon-present"></i> Form Dropzone</a></li>
+                                    <li><a href="form-icheck.html"><i class="icon-briefcase"></i> Icheck Controls</a></li>
+                                    <li><a href="form-cropper.html"><i class="icon-hourglass"></i> Image Cropper</a></li>
+                                    <li><a href="form-htmleditor.html"><i class="icon-graduation"></i> HTML5 Editor</a></li>
+                                    <li><a href="form-typehead.html"><i class="icon-puzzle"></i> Form Typehead</a></li>                            
+                                    <li><a href="form-xeditable.html"><i class="icon-cloud-upload"></i> Xeditable</a></li>
+                                    <li><a href="form-summernote.html"><i class="icon-ghost"></i> Summernote</a></li>
+                                </ul>  
+                            </li>
+                            <li class="dropdown"><a href="#"><i class="icon-menu"></i>Tables</a>                               
+                                <ul class="sub-menu">
+                                    <li><a href="table-basic.html"><i class="icon-grid"></i> Table Basic</a></li>
+                                    <li><a href="table-layout.html"><i class="icon-layers"></i> Table Layout</a></li>
+                                    <li><a href="table-datatable.html"><i class="icon-docs"></i> Datatable</a></li>
+                                    <li><a href="table-footable.html"><i class="icon-wallet"></i> Footable</a></li>
+                                    <li><a href="table-jsgrid.html"><i class="icon-folder"></i> Jsgrid</a></li>
+                                    <li><a href="table-responsive.html"><i class="icon-control-pause"></i> Table Responsive</a></li>                            
+                                    <li><a href="table-editable.html"><i class="icon-pencil"></i> Editable Table</a></li>
+                                </ul>   
+                            </li>
+                        </ul>                   
+                    </li>
+                    <li class="dropdown active"><a href="#"><i class="icon-magnet mr-1"></i> UI Component</a>                  
+                        <ul>
+                            <li class="dropdown"><a href="#"><i class="icon-screen-desktop"></i>UI Elements</a>                              
+                                <ul class="sub-menu">
+                                    <li><a href="ui-alert.html"><i class="icon-bell"></i> Alerts</a></li>
+                                    <li><a href="ui-badges.html"><i class="icon-badge"></i> Badges</a></li>
+                                    <li><a href="ui-buttons.html"><i class="icon-control-play"></i> Buttons</a></li>
+                                    <li><a href="ui-cards.html"><i class="icon-layers"></i> Cards</a></li>
+                                    <li><a href="ui-carousel.html"><i class="icon-picture"></i> Carousel</a></li>                           
+                                    <li><a href="ui-collapse.html"><i class="icon-arrow-up"></i> Collapse</a></li>
+                                    <li><a href="ui-dropdowns.html"><i class="icon-arrow-down"></i> Dropdowns</a></li>                          
+                                    <li><a href="ui-jumbotron.html"><i class="icon-screen-desktop"></i> Jumbotron</a></li>
+                                    <li><a href="ui-modals.html"><i class="icon-frame"></i> Modal</a></li> 
+                                    <li><a href="ui-pagination.html"><i class="icon-docs"></i> Pagination</a></li>  
+                                    <li><a href="ui-popoverandtooltip.html"><i class="icon-pin"></i> Popover &amp; Tooltip</a></li>
+                                    <li><a href="ui-progress.html"><i class="icon-graph"></i> Progress</a></li>
+                                    <li><a href="ui-scrollspy.html"><i class="icon-shuffle"></i> Scrollspy</a></li>
+                                    <li><a href="ui-select2.html"><i class="icon-wallet"></i> Select2</a></li>
+                                    <li><a href="ui-sweetalert.html"><i class="icon-fire"></i> Sweet Alert</a></li>
+                                    <li><a href="ui-timeline.html"><i class="icon-graduation"></i> Timeline</a></li>
+                                    <li><a href="ui-toastr.html"><i class="icon-layers"></i> Toastr</a></li>
+                                </ul>                              
+                            </li>
+                            <li class="dropdown active"><a href="#"><i class="icon-badge"></i>Icons</a>                            
+                                <ul class="sub-menu">
+                                    <li><a href="icon-materialdesign.html"><i class="icon-star"></i> Material Icon</a></li>
+                                    <li><a href="icon-font-awesome.html"><i class="icon-screen-tablet"></i> Font-awesome</a></li>
+                                    <li class="active"><a href="icon-themify.html"><i class="icon-plane"></i> Themify Icon</a></li>
+                                    <li><a href="icon-weather.html"><i class="icon-drawer"></i> Weather Icon</a></li>
+                                    <li><a href="icon-simple-line.html"><i class="icon-map"></i> Simple Line Icon</a></li>
+                                    <li><a href="icon-flag.html"><i class="icon-flag"></i> Flag Icon</a></li>
+                                    <li><a href="icon-ionicons.html"><i class="icon-rocket"></i> Ionicons Icon</a></li>
+                                    <li><a href="icon-icofont.html"><i class="icon-fire"></i> Icofont Icon</a></li>    
+                                    <li><a href="icon-linearicons.html"><i class="icon-list"></i> Linear</a></li>
+                                    <li><a href="icon-crypto.html"><i class="icon-diamond"></i> Crypto</a></li>
+                                </ul>                                 
+                            </li>
+                        </ul>                 
+                    </li>
+                    <li class="dropdown"><a href="#"><i class="icon-doc mr-1"></i> Pages</a>                  
+                        <ul>
+                            <li class="dropdown"><a href="#"><i class="icon-book-open"></i>Other Pages</a>                               
+                                <ul class="sub-menu">
+                                    <li><a href="page-lockscreen.html"><i class="icon-lock"></i> Lockscreen</a></li>
+                                    <li><a href="page-login.html"><i class="icon-login"></i> login</a></li>
+                                    <li><a href="page-register.html"><i class="icon-direction"></i> Register</a></li>
+                                    <li><a href="page-404.html"><i class="icon-crop"></i> 404 Page</a></li>
+                                    <li><a href="page-404-menu.html"><i class="icon-layers"></i> 404 Page With Menu</a></li>
+                                    <li><a href="page-blank.html"><i class="icon-frame"></i> Blank Page</a></li>
+                                    <li><a href="page-gallery.html"><i class="icon-layers"></i> Gallery</a></li>
+                                    <li><a href="page-pricing.html"><i class="icon-wallet"></i> Pricing</a></li>
+                                    <li><a href="page-contact-us.html"><i class="icon-wrench"></i> Contact us</a></li>
+                                </ul>                               
+                            </li>
+                            <li><a href="user-profile.html"><i class="icon-user"></i>Profile Pages</a></li>
+                        </ul>                   
+                    </li>
+                    <li class="dropdown"><a href="#"><i class="icon-support mr-1"></i> Extras</a>                   
+                        <ul>
+                            <li class="dropdown"><a href="#"><i class="icon-map"></i>Map</a>                               
+                                <ul class="sub-menu">
+                                    <li><a href="map-google.html"><i class="icon-map"></i> Google Map</a></li>
+                                    <li><a href="map-vector.html"><i class="icon-vector"></i> Vector Map</a></li>
+
+                                </ul>                               
+                            </li>
+                            <li class="dropdown"><a href="#"><i class="icon-pencil"></i>Blog</a>                               
+                                <ul class="sub-menu">
+                                    <li><a href="blog-list.html"><i class="icon-plus"></i> Blog List</a></li>
+                                    <li><a href="blog-single.html"><i class="icon-tag"></i> Blog Post</a></li>                            
+                                </ul>                               
+                            </li>  
+                            <li class="dropdown"><a href="#"><i class="icon-bag"></i>Ecommerce</a>                                 
+                                <ul class="sub-menu">
+                                    <li><a href="ecommerce-product-list.html"><i class="icon-grid"></i> Products List</a></li>
+                                    <li><a href="ecommerce-product-detail.html"><i class="icon-plus"></i> Product Detail</a></li>
+                                    <li><a href="ecommerce-cart.html"><i class="icon-badge"></i> Cart</a></li>
+                                    <li><a href="ecommerce-checkout.html"><i class="icon-plus"></i> Checkout</a></li>
+                                    <li><a href="ecommerce-orders.html"><i class="icon-basket"></i> Orders</a></li>
+                                    <li><a href="ecommerce-order-view.html"><i class="icon-equalizer"></i> Order View</a></li>                           
+
+                                </ul>                               
+                            </li>
+                        </ul>                    
+                    </li>
+                </ul>
+                <!-- END: Menu-->
+                <ol class="breadcrumb bg-transparent align-self-center m-0 p-0 ml-auto">
+                    <li class="breadcrumb-item"><a href="#">Application</a></li>
+                    <li class="breadcrumb-item active">Themify Icon</li>
+                </ol>
+            </div>
+        </div>
+        <!-- END: Main Menu-->
+
+        <!-- START: Main Content-->
+        <main>
+            <div class="container-fluid site-width">
+                <!-- START: Breadcrumbs-->
+                <div class="row ">
+                    <div class="col-12  align-self-center">
+                        <div class="sub-header mt-3 py-3 align-self-center d-sm-flex w-100 rounded">
+                            <div class="w-sm-100 mr-auto"><h4 class="mb-0">Themify Icon</h4></div>
+
+                            <ol class="breadcrumb bg-transparent align-self-center m-0 p-0">
+                                <li class="breadcrumb-item">Home</li>
+                                <li class="breadcrumb-item">Icon</li>
+                                <li class="breadcrumb-item active"><a href="#">Themify Icon</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Breadcrumbs-->
+
+                <!-- START: Card Data-->
+                <div class="row">
+                    <div class="col-12  mt-3">                          
+                        <div class="card"> 
+                            <div class="card-header  justify-content-between align-items-center">                               
+                                <h4 class="card-title">ARROWS & DIRECTION ICONS</h4> 
+                            </div>
+                            <div class="card-body text-center">                                    
+
+                                <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                    <span class="ti-arrow-up"></span><span class="icon-name"> ti-arrow-up</span>
+                                </div>
+                                <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                    <span class="ti-arrow-right"></span><span class="icon-name"> ti-arrow-right</span>
+                                </div>
+                                <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                    <span class="ti-arrow-left"></span><span class="icon-name"> ti-arrow-left</span>
+                                </div>
+                                <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                    <span class="ti-arrow-down"></span><span class="icon-name"> ti-arrow-down</span>
+                                </div>
+                                <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                    <span class="ti-arrows-vertical"></span><span class="icon-name"> ti-arrows-vertical</span>
+                                </div>
+                                <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                    <span class="ti-arrows-horizontal"></span><span class="icon-name"> ti-arrows-horizontal</span>
+                                </div>
+                                <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                    <span class="ti-angle-up"></span><span class="icon-name"> ti-angle-up</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-angle-right"></span><span class="icon-name"> ti-angle-right</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-angle-left"></span><span class="icon-name"> ti-angle-left</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-angle-down"></span><span class="icon-name"> ti-angle-down</span>
+                                </div>	
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-angle-double-up"></span><span class="icon-name"> ti-angle-double-up</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-angle-double-right"></span><span class="icon-name"> ti-angle-double-right</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-angle-double-left"></span><span class="icon-name"> ti-angle-double-left</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-angle-double-down"></span><span class="icon-name"> ti-angle-double-down</span>
+                                </div>					
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-move"></span><span class="icon-name"> ti-move</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-fullscreen"></span><span class="icon-name"> ti-fullscreen</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-arrow-top-right"></span><span class="icon-name"> ti-arrow-top-right</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-arrow-top-left"></span><span class="icon-name"> ti-arrow-top-left</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-arrow-circle-up"></span><span class="icon-name"> ti-arrow-circle-up</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-arrow-circle-right"></span><span class="icon-name"> ti-arrow-circle-right</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-arrow-circle-left"></span><span class="icon-name"> ti-arrow-circle-left</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-arrow-circle-down"></span><span class="icon-name"> ti-arrow-circle-down</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-arrows-corner"></span><span class="icon-name"> ti-arrows-corner</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-split-v"></span><span class="icon-name"> ti-split-v</span>
+                                </div>
+
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-split-v-alt"></span><span class="icon-name"> ti-split-v-alt</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-split-h"></span><span class="icon-name"> ti-split-h</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-hand-point-up"></span><span class="icon-name"> ti-hand-point-up</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-hand-point-right"></span><span class="icon-name"> ti-hand-point-right</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-hand-point-left"></span><span class="icon-name"> ti-hand-point-left</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-hand-point-down"></span><span class="icon-name"> ti-hand-point-down</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-back-right"></span><span class="icon-name"> ti-back-right</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-back-left"></span><span class="icon-name"> ti-back-left</span>
+                                </div>
+                                <div class="font-icon-list p-2 border mx-1 mb-2">
+                                    <span class="ti-exchange-vertical"></span><span class="icon-name"> ti-exchange-vertical</span>
+                                </div>
+
+
+                            </div>                             
+                        </div>
+                    </div>
+
+                    <div class="col-12  mt-4">                          
+                        <div class="card"> 
+                            <div class="card-header  justify-content-between align-items-center">                               
+                                <h4 class="card-title">WEB APP ICONS</h4> 
+                            </div>
+                            <div class="card-body">
+                                <div class="icon-section text-center">
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-wand"></span><span class="icon-name"> ti-wand</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-save"></span><span class="icon-name"> ti-save</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-save-alt"></span><span class="icon-name"> ti-save-alt</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-direction"></span><span class="icon-name"> ti-direction</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-direction-alt"></span><span class="icon-name"> ti-direction-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-user"></span><span class="icon-name"> ti-user</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-link"></span><span class="icon-name"> ti-link</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-unlink"></span><span class="icon-name"> ti-unlink</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-trash"></span><span class="icon-name"> ti-trash</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-target"></span><span class="icon-name"> ti-target</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-tag"></span><span class="icon-name"> ti-tag</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-desktop"></span><span class="icon-name"> ti-desktop</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-tablet"></span><span class="icon-name"> ti-tablet</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-mobile"></span><span class="icon-name"> ti-mobile</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-email"></span><span class="icon-name"> ti-email</span>
+                                    </div>	
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-star"></span><span class="icon-name"> ti-star</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-spray"></span><span class="icon-name"> ti-spray</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-signal"></span><span class="icon-name"> ti-signal</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-shopping-cart"></span><span class="icon-name"> ti-shopping-cart</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-shopping-cart-full"></span><span class="icon-name"> ti-shopping-cart-full</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-settings"></span><span class="icon-name"> ti-settings</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-search"></span><span class="icon-name"> ti-search</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-zoom-in"></span><span class="icon-name"> ti-zoom-in</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-zoom-out"></span><span class="icon-name"> ti-zoom-out</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-cut"></span><span class="icon-name"> ti-cut</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-ruler"></span><span class="icon-name"> ti-ruler</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-ruler-alt-2"></span><span class="icon-name"> ti-ruler-alt-2</span>
+                                    </div>			
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-ruler-pencil"></span><span class="icon-name"> ti-ruler-pencil</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-ruler-alt"></span><span class="icon-name"> ti-ruler-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-bookmark"></span><span class="icon-name"> ti-bookmark</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-bookmark-alt"></span><span class="icon-name"> ti-bookmark-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-reload"></span><span class="icon-name"> ti-reload</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-plus"></span><span class="icon-name"> ti-plus</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-minus"></span><span class="icon-name"> ti-minus</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-close"></span><span class="icon-name"> ti-close</span>
+                                    </div>			
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-pin"></span><span class="icon-name"> ti-pin</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-pencil"></span><span class="icon-name"> ti-pencil</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-pencil-alt"></span><span class="icon-name"> ti-pencil-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-paint-roller"></span><span class="icon-name"> ti-paint-roller</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-paint-bucket"></span><span class="icon-name"> ti-paint-bucket</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-na"></span><span class="icon-name"> ti-na</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-medall"></span><span class="icon-name"> ti-medall</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-medall-alt"></span><span class="icon-name"> ti-medall-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-marker"></span><span class="icon-name"> ti-marker</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-marker-alt"></span><span class="icon-name"> ti-marker-alt</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-lock"></span><span class="icon-name"> ti-lock</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-unlock"></span><span class="icon-name"> ti-unlock</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-location-arrow"></span><span class="icon-name"> ti-location-arrow</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout"></span><span class="icon-name"> ti-layout</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layers"></span><span class="icon-name"> ti-layers</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layers-alt"></span><span class="icon-name"> ti-layers-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-key"></span><span class="icon-name"> ti-key</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-image"></span><span class="icon-name"> ti-image</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-heart"></span><span class="icon-name"> ti-heart</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-heart-broken"></span><span class="icon-name"> ti-heart-broken</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-hand-stop"></span><span class="icon-name"> ti-hand-stop</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-hand-open"></span><span class="icon-name"> ti-hand-open</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-hand-drag"></span><span class="icon-name"> ti-hand-drag</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-flag"></span><span class="icon-name"> ti-flag</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-flag-alt"></span><span class="icon-name"> ti-flag-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-flag-alt-2"></span><span class="icon-name"> ti-flag-alt-2</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-eye"></span><span class="icon-name"> ti-eye</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-import"></span><span class="icon-name"> ti-import</span>
+                                    </div>			
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-export"></span><span class="icon-name"> ti-export</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-cup"></span><span class="icon-name"> ti-cup</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-crown"></span><span class="icon-name"> ti-crown</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-comments"></span><span class="icon-name"> ti-comments</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-comment"></span><span class="icon-name"> ti-comment</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-comment-alt"></span><span class="icon-name"> ti-comment-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-thought"></span><span class="icon-name"> ti-thought</span>
+                                    </div>			
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-clip"></span><span class="icon-name"> ti-clip</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-check"></span><span class="icon-name"> ti-check</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-check-box"></span><span class="icon-name"> ti-check-box</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-camera"></span><span class="icon-name"> ti-camera</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-announcement"></span><span class="icon-name"> ti-announcement</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-brush"></span><span class="icon-name"> ti-brush</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-brush-alt"></span><span class="icon-name"> ti-brush-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-palette"></span><span class="icon-name"> ti-palette</span>
+                                    </div>			
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-briefcase"></span><span class="icon-name"> ti-briefcase</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-bolt"></span><span class="icon-name"> ti-bolt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-bolt-alt"></span><span class="icon-name"> ti-bolt-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-blackboard"></span><span class="icon-name"> ti-blackboard</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-bag"></span><span class="icon-name"> ti-bag</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-world"></span><span class="icon-name"> ti-world</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-wheelchair"></span><span class="icon-name"> ti-wheelchair</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-car"></span><span class="icon-name"> ti-car</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-truck"></span><span class="icon-name"> ti-truck</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-timer"></span><span class="icon-name"> ti-timer</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-ticket"></span><span class="icon-name"> ti-ticket</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-thumb-up"></span><span class="icon-name"> ti-thumb-up</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-thumb-down"></span><span class="icon-name"> ti-thumb-down</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-stats-up"></span><span class="icon-name"> ti-stats-up</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-stats-down"></span><span class="icon-name"> ti-stats-down</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-shine"></span><span class="icon-name"> ti-shine</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-shift-right"></span><span class="icon-name"> ti-shift-right</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-shift-left"></span><span class="icon-name"> ti-shift-left</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-shift-right-alt"></span><span class="icon-name"> ti-shift-right-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-shift-left-alt"></span><span class="icon-name"> ti-shift-left-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-shield"></span><span class="icon-name"> ti-shield</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-notepad"></span><span class="icon-name"> ti-notepad</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-server"></span><span class="icon-name"> ti-server</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-pulse"></span><span class="icon-name"> ti-pulse</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-printer"></span><span class="icon-name"> ti-printer</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-power-off"></span><span class="icon-name"> ti-power-off</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-plug"></span><span class="icon-name"> ti-plug</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-pie-chart"></span><span class="icon-name"> ti-pie-chart</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-panel"></span><span class="icon-name"> ti-panel</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-package"></span><span class="icon-name"> ti-package</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-music"></span><span class="icon-name"> ti-music</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-music-alt"></span><span class="icon-name"> ti-music-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-mouse"></span><span class="icon-name"> ti-mouse</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-mouse-alt"></span><span class="icon-name"> ti-mouse-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-money"></span><span class="icon-name"> ti-money</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-microphone"></span><span class="icon-name"> ti-microphone</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-menu"></span><span class="icon-name"> ti-menu</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-menu-alt"></span><span class="icon-name"> ti-menu-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-map"></span><span class="icon-name"> ti-map</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-map-alt"></span><span class="icon-name"> ti-map-alt</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-location-pin"></span><span class="icon-name"> ti-location-pin</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-light-bulb"></span><span class="icon-name"> ti-light-bulb</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-info"></span><span class="icon-name"> ti-info</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-infinite"></span><span class="icon-name"> ti-infinite</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-id-badge"></span><span class="icon-name"> ti-id-badge</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-hummer"></span><span class="icon-name"> ti-hummer</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-home"></span><span class="icon-name"> ti-home</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-help"></span><span class="icon-name"> ti-help</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-headphone"></span><span class="icon-name"> ti-headphone</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-harddrives"></span><span class="icon-name"> ti-harddrives</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-harddrive"></span><span class="icon-name"> ti-harddrive</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-gift"></span><span class="icon-name"> ti-gift</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-game"></span><span class="icon-name"> ti-game</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-filter"></span><span class="icon-name"> ti-filter</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-files"></span><span class="icon-name"> ti-files</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-file"></span><span class="icon-name"> ti-file</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-zip"></span><span class="icon-name"> ti-zip</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-folder"></span><span class="icon-name"> ti-folder</span>
+                                    </div>			
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-envelope"></span><span class="icon-name"> ti-envelope</span>
+                                    </div>
+
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-dashboard"></span><span class="icon-name"> ti-dashboard</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-cloud"></span><span class="icon-name"> ti-cloud</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-cloud-up"></span><span class="icon-name"> ti-cloud-up</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-cloud-down"></span><span class="icon-name"> ti-cloud-down</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-clipboard"></span><span class="icon-name"> ti-clipboard</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-calendar"></span><span class="icon-name"> ti-calendar</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-book"></span><span class="icon-name"> ti-book</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-bell"></span><span class="icon-name"> ti-bell</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-basketball"></span><span class="icon-name"> ti-basketball</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-bar-chart"></span><span class="icon-name"> ti-bar-chart</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-bar-chart-alt"></span><span class="icon-name"> ti-bar-chart-alt</span>
+                                    </div>
+
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-archive"></span><span class="icon-name"> ti-archive</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-anchor"></span><span class="icon-name"> ti-anchor</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-alert"></span><span class="icon-name"> ti-alert</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-alarm-clock"></span><span class="icon-name"> ti-alarm-clock</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-agenda"></span><span class="icon-name"> ti-agenda</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-write"></span><span class="icon-name"> ti-write</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-wallet"></span><span class="icon-name"> ti-wallet</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-video-clapper"></span><span class="icon-name"> ti-video-clapper</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-video-camera"></span><span class="icon-name"> ti-video-camera</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-vector"></span><span class="icon-name"> ti-vector</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-support"></span><span class="icon-name"> ti-support</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-stamp"></span><span class="icon-name"> ti-stamp</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-slice"></span><span class="icon-name"> ti-slice</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-shortcode"></span><span class="icon-name"> ti-shortcode</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-receipt"></span><span class="icon-name"> ti-receipt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-pin2"></span><span class="icon-name"> ti-pin2</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-pin-alt"></span><span class="icon-name"> ti-pin-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-pencil-alt2"></span><span class="icon-name"> ti-pencil-alt2</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-eraser"></span><span class="icon-name"> ti-eraser</span>
+                                    </div>			
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-more"></span><span class="icon-name"> ti-more</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-more-alt"></span><span class="icon-name"> ti-more-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-microphone-alt"></span><span class="icon-name"> ti-microphone-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-magnet"></span><span class="icon-name"> ti-magnet</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-line-double"></span><span class="icon-name"> ti-line-double</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-line-dotted"></span><span class="icon-name"> ti-line-dotted</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-line-dashed"></span><span class="icon-name"> ti-line-dashed</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-ink-pen"></span><span class="icon-name"> ti-ink-pen</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-info-alt"></span><span class="icon-name"> ti-info-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-help-alt"></span><span class="icon-name"> ti-help-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-headphone-alt"></span><span class="icon-name"> ti-headphone-alt</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-gallery"></span><span class="icon-name"> ti-gallery</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-face-smile"></span><span class="icon-name"> ti-face-smile</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-face-sad"></span><span class="icon-name"> ti-face-sad</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-credit-card"></span><span class="icon-name"> ti-credit-card</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-comments-smiley"></span><span class="icon-name"> ti-comments-smiley</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-time"></span><span class="icon-name"> ti-time</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-share"></span><span class="icon-name"> ti-share</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-share-alt"></span><span class="icon-name"> ti-share-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-rocket"></span><span class="icon-name"> ti-rocket</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-new-window"></span><span class="icon-name"> ti-new-window</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-rss"></span><span class="icon-name"> ti-rss</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-rss-alt"></span><span class="icon-name"> ti-rss-alt</span>
+                                    </div>
+
+                                </div>
+                            </div>                             
+                        </div>
+                    </div>
+
+                    <div class="col-12  mt-4">                          
+                        <div class="card"> 
+                            <div class="card-header  justify-content-between align-items-center">                               
+                                <h4 class="card-title">CONTROL ICONS</h4> 
+                            </div>
+                            <div class="card-body">
+                                <div class="icon-section text-center">
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-control-stop"></span><span class="icon-name"> ti-control-stop</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-control-shuffle"></span><span class="icon-name"> ti-control-shuffle</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-control-play"></span><span class="icon-name"> ti-control-play</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-control-pause"></span><span class="icon-name"> ti-control-pause</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-control-forward"></span><span class="icon-name"> ti-control-forward</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-control-backward"></span><span class="icon-name"> ti-control-backward</span>
+                                    </div>	
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-volume"></span><span class="icon-name"> ti-volume</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-control-skip-forward"></span><span class="icon-name"> ti-control-skip-forward</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-control-skip-backward"></span><span class="icon-name"> ti-control-skip-backward</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-control-record"></span><span class="icon-name"> ti-control-record</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-control-eject"></span><span class="icon-name"> ti-control-eject</span>
+                                    </div>			
+                                </div>
+                            </div>                             
+                        </div>
+                    </div>
+                    <div class="col-12  mt-4">                          
+                        <div class="card"> 
+                            <div class="card-header  justify-content-between align-items-center">                               
+                                <h4 class="card-title">TEXT EDITOR</h4> 
+                            </div>
+                            <div class="card-body">
+                                <div class="icon-section text-center">
+
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-paragraph"></span><span class="icon-name"> ti-paragraph</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-uppercase"></span><span class="icon-name"> ti-uppercase</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-underline"></span><span class="icon-name"> ti-underline</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-text"></span><span class="icon-name"> ti-text</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-Italic"></span><span class="icon-name"> ti-Italic</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-smallcap"></span><span class="icon-name"> ti-smallcap</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-list"></span><span class="icon-name"> ti-list</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-list-ol"></span><span class="icon-name"> ti-list-ol</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-align-right"></span><span class="icon-name"> ti-align-right</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-align-left"></span><span class="icon-name"> ti-align-left</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-align-justify"></span><span class="icon-name"> ti-align-justify</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-align-center"></span><span class="icon-name"> ti-align-center</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-quote-right"></span><span class="icon-name"> ti-quote-right</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-quote-left"></span><span class="icon-name"> ti-quote-left</span>
+                                    </div>
+
+                                </div>
+                            </div>                             
+                        </div>
+                    </div>
+                    <div class="col-12  mt-4">                          
+                        <div class="card"> 
+                            <div class="card-header  justify-content-between align-items-center">                               
+                                <h4 class="card-title">LAYOUT ICONS</h4> 
+                            </div>
+                            <div class="card-body">
+                                <div class="icon-section text-center">
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-width-full"></span><span class="icon-name"> ti-layout-width-full</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-width-default"></span><span class="icon-name"> ti-layout-width-default</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-width-default-alt"></span><span class="icon-name"> ti-layout-width-default-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-tab"></span><span class="icon-name"> ti-layout-tab</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-tab-window"></span><span class="icon-name"> ti-layout-tab-window</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-tab-v"></span><span class="icon-name"> ti-layout-tab-v</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-tab-min"></span><span class="icon-name"> ti-layout-tab-min</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-slider"></span><span class="icon-name"> ti-layout-slider</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-slider-alt"></span><span class="icon-name"> ti-layout-slider-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-sidebar-right"></span><span class="icon-name"> ti-layout-sidebar-right</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-sidebar-none"></span><span class="icon-name"> ti-layout-sidebar-none</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-sidebar-left"></span><span class="icon-name"> ti-layout-sidebar-left</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-placeholder"></span><span class="icon-name"> ti-layout-placeholder</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-menu"></span><span class="icon-name"> ti-layout-menu</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-menu-v"></span><span class="icon-name"> ti-layout-menu-v</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-menu-separated"></span><span class="icon-name"> ti-layout-menu-separated</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-menu-full"></span><span class="icon-name"> ti-layout-menu-full</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-media-right"></span><span class="icon-name"> ti-layout-media-right</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-media-right-alt"></span><span class="icon-name"> ti-layout-media-right-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-media-overlay"></span><span class="icon-name"> ti-layout-media-overlay</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-media-overlay-alt"></span><span class="icon-name"> ti-layout-media-overlay-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-media-overlay-alt-2"></span><span class="icon-name"> ti-layout-media-overlay-alt-2</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-media-left"></span><span class="icon-name"> ti-layout-media-left</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-media-left-alt"></span><span class="icon-name"> ti-layout-media-left-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-media-center"></span><span class="icon-name"> ti-layout-media-center</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-media-center-alt"></span><span class="icon-name"> ti-layout-media-center-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-list-thumb"></span><span class="icon-name"> ti-layout-list-thumb</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-list-thumb-alt"></span><span class="icon-name"> ti-layout-list-thumb-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-list-post"></span><span class="icon-name"> ti-layout-list-post</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-list-large-image"></span><span class="icon-name"> ti-layout-list-large-image</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-line-solid"></span><span class="icon-name"> ti-layout-line-solid</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-grid4"></span><span class="icon-name"> ti-layout-grid4</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-grid3"></span><span class="icon-name"> ti-layout-grid3</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-grid2"></span><span class="icon-name"> ti-layout-grid2</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-grid2-thumb"></span><span class="icon-name"> ti-layout-grid2-thumb</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-cta-right"></span><span class="icon-name"> ti-layout-cta-right</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-cta-left"></span><span class="icon-name"> ti-layout-cta-left</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-cta-center"></span><span class="icon-name"> ti-layout-cta-center</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-cta-btn-right"></span><span class="icon-name"> ti-layout-cta-btn-right</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-cta-btn-left"></span><span class="icon-name"> ti-layout-cta-btn-left</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-column4"></span><span class="icon-name"> ti-layout-column4</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-column3"></span><span class="icon-name"> ti-layout-column3</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-column2"></span><span class="icon-name"> ti-layout-column2</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-accordion-separated"></span><span class="icon-name"> ti-layout-accordion-separated</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-accordion-merged"></span><span class="icon-name"> ti-layout-accordion-merged</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-accordion-list"></span><span class="icon-name"> ti-layout-accordion-list</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-widgetized"></span><span class="icon-name"> ti-widgetized</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-widget"></span><span class="icon-name"> ti-widget</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-widget-alt"></span><span class="icon-name"> ti-widget-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-view-list"></span><span class="icon-name"> ti-view-list</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-view-list-alt"></span><span class="icon-name"> ti-view-list-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-view-grid"></span><span class="icon-name"> ti-view-grid</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-upload"></span><span class="icon-name"> ti-upload</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-download"></span><span class="icon-name"> ti-download</span>
+                                    </div>	
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-loop"></span><span class="icon-name"> ti-loop</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-sidebar-2"></span><span class="icon-name"> ti-layout-sidebar-2</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-grid4-alt"></span><span class="icon-name"> ti-layout-grid4-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-grid3-alt"></span><span class="icon-name"> ti-layout-grid3-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-grid2-alt"></span><span class="icon-name"> ti-layout-grid2-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-column4-alt"></span><span class="icon-name"> ti-layout-column4-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-column3-alt"></span><span class="icon-name"> ti-layout-column3-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-layout-column2-alt"></span><span class="icon-name"> ti-layout-column2-alt</span>
+                                    </div>		
+
+
+                                </div>
+                            </div>                             
+                        </div>
+                    </div>
+                    <div class="col-12  mt-4">                          
+                        <div class="card"> 
+                            <div class="card-header  justify-content-between align-items-center">                               
+                                <h4 class="card-title">BRAND ICONS</h4> 
+                            </div>
+                            <div class="card-body">
+                                <div class="icon-section text-center">
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-flickr"></span><span class="icon-name"> ti-flickr</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-flickr-alt"></span><span class="icon-name"> ti-flickr-alt</span>
+                                    </div>			
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-instagram"></span><span class="icon-name"> ti-instagram</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-google"></span><span class="icon-name"> ti-google</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-github"></span><span class="icon-name"> ti-github</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-facebook"></span><span class="icon-name"> ti-facebook</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-dropbox"></span><span class="icon-name"> ti-dropbox</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-dropbox-alt"></span><span class="icon-name"> ti-dropbox-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-dribbble"></span><span class="icon-name"> ti-dribbble</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-apple"></span><span class="icon-name"> ti-apple</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-android"></span><span class="icon-name"> ti-android</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-yahoo"></span><span class="icon-name"> ti-yahoo</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-trello"></span><span class="icon-name"> ti-trello</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-stack-overflow"></span><span class="icon-name"> ti-stack-overflow</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-soundcloud"></span><span class="icon-name"> ti-soundcloud</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-sharethis"></span><span class="icon-name"> ti-sharethis</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-sharethis-alt"></span><span class="icon-name"> ti-sharethis-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-reddit"></span><span class="icon-name"> ti-reddit</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-microsoft"></span><span class="icon-name"> ti-microsoft</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-microsoft-alt"></span><span class="icon-name"> ti-microsoft-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-linux"></span><span class="icon-name"> ti-linux</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-jsfiddle"></span><span class="icon-name"> ti-jsfiddle</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-joomla"></span><span class="icon-name"> ti-joomla</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-html5"></span><span class="icon-name"> ti-html5</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-css3"></span><span class="icon-name"> ti-css3</span>
+                                    </div>	
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-drupal"></span><span class="icon-name"> ti-drupal</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-wordpress"></span><span class="icon-name"> ti-wordpress</span>
+                                    </div>		
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-tumblr"></span><span class="icon-name"> ti-tumblr</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-tumblr-alt"></span><span class="icon-name"> ti-tumblr-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-skype"></span><span class="icon-name"> ti-skype</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-youtube"></span><span class="icon-name"> ti-youtube</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-vimeo"></span><span class="icon-name"> ti-vimeo</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-vimeo-alt"></span><span class="icon-name"> ti-vimeo-alt</span>
+                                    </div>			
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-twitter"></span><span class="icon-name"> ti-twitter</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-twitter-alt"></span><span class="icon-name"> ti-twitter-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-linkedin"></span><span class="icon-name"> ti-linkedin</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-pinterest"></span><span class="icon-name"> ti-pinterest</span>
+                                    </div>
+
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-pinterest-alt"></span><span class="icon-name"> ti-pinterest-alt</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-themify-logo"></span><span class="icon-name"> ti-themify-logo</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-themify-favicon"></span><span class="icon-name"> ti-themify-favicon</span>
+                                    </div>
+                                    <div class="font-icon-list p-2 border mx-1 mb-2">
+                                        <span class="ti-themify-favicon-alt"></span><span class="icon-name"> ti-themify-favicon-alt</span>
+                                    </div>
+
+                                </div>
+                            </div>                             
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Card DATA-->
+            </div>
+        </main>
+        <!-- END: Content-->
+
+
+
+        <!-- START: Footer-->
+        <footer class="site-footer">
+            2020 © PICK
+        </footer>
+        <!-- END: Footer-->
+
+
+        <!-- START: Back to top-->
+        <a href="#" class="scrollup text-center"> 
+            <i class="icon-arrow-up"></i>
+        </a>
+        <!-- END: Back to top-->
+
+        <!-- START: Template JS-->
+        <script src="dist/vendors/jquery/jquery-3.3.1.min.js"></script>
+        <script src="dist/vendors/jquery-ui/jquery-ui.min.js"></script>
+        <script src="dist/vendors/moment/moment.js"></script>
+        <script src="dist/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>    
+        <script src="dist/vendors/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <!-- END: Template JS-->
+
+        <!-- START: APP JS-->
+        <script src="dist/js/app.js"></script>
+        <!-- END: APP JS-->
+    </body>
+    <!-- END: Body-->
+</html>

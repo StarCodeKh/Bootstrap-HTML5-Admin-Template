@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- START: Head-->
+    <head>
+        <meta charset="UTF-8">
+        <title>Pick Admin</title>
+        <link rel="shortcut icon" href="dist/images/favicon.ico" />
+        <meta name="viewport" content="width=device-width,initial-scale=1"> 
+
+        <!-- START: Template CSS-->
+        <link rel="stylesheet" href="dist/vendors/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="dist/vendors/jquery-ui/jquery-ui.min.css">
+        <link rel="stylesheet" href="dist/vendors/jquery-ui/jquery-ui.theme.min.css">
+        <link rel="stylesheet" href="dist/vendors/simple-line-icons/css/simple-line-icons.css">        
+        <link rel="stylesheet" href="dist/vendors/flags-icon/css/flag-icon.min.css"> 
+
+        <!-- END Template CSS-->
+
+        <!-- START: Custom CSS-->
+        <link rel="stylesheet" href="dist/css/main.css">
+        <!-- END: Custom CSS-->
+    </head>
+    <!-- END Head-->
+
+    <!-- START: Body--> 
+    <body id="main-container" class="default">
+        <!-- START: Pre Loader-->
+        <div class="se-pre-con">
+            <div class="loader"></div>
+        </div>
+        <!-- END: Pre Loader-->
+
+        <!-- START: Header-->
+        <div id="header-fix" class="header fixed-top">
+            <div class="site-width">
+                <nav class="navbar navbar-expand-lg  p-0">
+                    <div class="navbar-header  h-100 h4 mb-0 align-self-center logo-bar text-left">  
+                        <a href="index.html" class="horizontal-logo text-left">
+                            <svg height="20pt" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512" width="20pt" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="matrix(.1 0 0 -.1 0 512)" fill="#1e3d73">
+                            <path d="m1450 4481-1105-638v-1283-1283l1106-638c1033-597 1139-654 1139-619 0 4-385 674-855 1489-470 814-855 1484-855 1488 0 8 1303 763 1418 822 175 89 413 166 585 190 114 16 299 13 408-5 100-17 231-60 314-102 310-156 569-509 651-887 23-105 23-331 0-432-53-240-177-460-366-651-174-175-277-247-738-512-177-102-322-189-322-193s104-188 231-407l231-400 46 28c26 15 360 207 742 428l695 402v1282 1282l-1105 639c-608 351-1107 638-1110 638s-502-287-1110-638z"/><path d="m2833 3300c-82-12-190-48-282-95-73-36-637-358-648-369-3-3 580-1022 592-1034 5-5 596 338 673 391 100 69 220 197 260 280 82 167 76 324-19 507-95 184-233 291-411 320-70 11-89 11-165 0z"/>
+                            </g>
+                            </svg> <span class="h4 font-weight-bold align-self-center mb-0 ml-auto">PICK</span>              
+                        </a>                   
+                    </div>
+                    <div class="navbar-header h4 mb-0 text-center h-100 collapse-menu-bar">
+                        <a href="#" class="sidebarCollapse" id="collapse"><i class="icon-menu"></i></a>
+                    </div>
+
+                    <form class="float-left d-none d-lg-block search-form">
+                        <div class="form-group mb-0 position-relative">
+                            <input type="text" class="form-control border-0 rounded bg-search pl-5" placeholder="Search anything...">
+                            <div class="btn-search position-absolute top-0">
+                                <a href="#"><i class="h6 icon-magnifier"></i></a>
+                            </div>
+                            <a href="#" class="position-absolute close-button mobilesearch d-lg-none" data-toggle="dropdown" aria-expanded="false"><i class="icon-close h5"></i>                               
+                            </a>
+
+                        </div>
+                    </form>
+                    <div class="navbar-right ml-auto h-100">
+                        <ul class="ml-auto p-0 m-0 list-unstyled d-flex top-icon h-100">
+                            <li class="d-inline-block align-self-center  d-block d-lg-none">
+                                <a href="#" class="nav-link mobilesearch" data-toggle="dropdown" aria-expanded="false"><i class="icon-magnifier h4"></i>                               
+                                </a>
+                            </li>                        
+
+                            <li class="dropdown align-self-center">
+                                <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false"><i class="icon-reload h4"></i>
+                                    <span class="badge badge-default"> <span class="ring">
+                                        </span><span class="ring-point">
+                                        </span> </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right border  py-0">
+                                    <li>
+                                        <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                            <div class="media">
+                                                <img src="dist/images/author.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
+                                                <div class="media-body">
+                                                    <p class="mb-0">john</p>
+                                                    <span class="text-success">New user registered.</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                            <div class="media">
+                                                <img src="dist/images/author2.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
+                                                <div class="media-body">
+                                                    <p class="mb-0">Peter</p>
+                                                    <span class="text-success">Server #12 overloaded.</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                            <div class="media">
+                                                <img src="dist/images/author3.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
+                                                <div class="media-body">
+                                                    <p class="mb-0">Bill</p>
+                                                    <span class="text-danger">Application error.</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li><a class="dropdown-item text-center py-2" href="#"> See All Tasks <i class="icon-arrow-right pl-2 small"></i></a></li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown align-self-center d-inline-block">
+                                <a href="#" class="nav-link" data-toggle="dropdown" aria-expanded="false"><i class="icon-bell h4"></i>
+                                    <span class="badge badge-default"> <span class="ring">
+                                        </span><span class="ring-point">
+                                        </span> </span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right border   py-0">
+                                    <li>
+                                        <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                            <div class="media">
+                                                <img src="dist/images/author.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle w-50">
+                                                <div class="media-body">
+                                                    <p class="mb-0 text-success">john send a message</p>
+                                                    12 min ago
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                            <div class="media">
+                                                <img src="dist/images/author2.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
+                                                <div class="media-body">
+                                                    <p class="mb-0 text-danger">Peter send a message</p>
+                                                    15 min ago
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a class="dropdown-item px-2 py-2 border border-top-0 border-left-0 border-right-0" href="#">
+                                            <div class="media">
+                                                <img src="dist/images/author3.jpg" alt="" class="d-flex mr-3 img-fluid rounded-circle">
+                                                <div class="media-body">
+                                                    <p class="mb-0 text-warning">Bill send a message</p>
+                                                    5 min ago
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li><a class="dropdown-item text-center py-2" href="#"> Read All Message <i class="icon-arrow-right pl-2 small"></i></a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown user-profile align-self-center d-inline-block">
+                                <a href="#" class="nav-link py-0" data-toggle="dropdown" aria-expanded="false"> 
+                                    <div class="media">                                   
+                                        <img src="dist/images/author.jpg" alt="" class="d-flex img-fluid rounded-circle" width="29">
+                                    </div>
+                                </a>
+
+                                <div class="dropdown-menu border dropdown-menu-right p-0">
+                                    <a href="" class="dropdown-item px-2 align-self-center d-flex">
+                                        <span class="icon-pencil mr-2 h6 mb-0"></span> Edit Profile</a>
+                                    <a href="" class="dropdown-item px-2 align-self-center d-flex">
+                                        <span class="icon-user mr-2 h6 mb-0"></span> View Profile</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="" class="dropdown-item px-2 align-self-center d-flex">
+                                        <span class="icon-support mr-2 h6  mb-0"></span> Help Center</a>
+                                    <a href="" class="dropdown-item px-2 align-self-center d-flex">
+                                        <span class="icon-globe mr-2 h6 mb-0"></span> Forum</a>
+                                    <a href="" class="dropdown-item px-2 align-self-center d-flex">
+                                        <span class="icon-settings mr-2 h6 mb-0"></span> Account Settings</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="" class="dropdown-item px-2 text-danger align-self-center d-flex">
+                                        <span class="icon-logout mr-2 h6  mb-0"></span> Sign Out</a>
+                                </div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- END: Header-->
+
+        <!-- START: Main Menu-->
+        <div class="sidebar">
+            <div class="site-width">
+
+                <!-- START: Menu-->
+                <ul id="side-menu" class="sidebar-menu">
+                    <li class="dropdown"><a href="#"><i class="icon-home mr-1"></i> Dashboard</a>                  
+                        <ul>
+                            <li><a href="index.html"><i class="icon-rocket"></i> Dashboard</a></li>
+                            <li><a href="index-account.html"><i class="icon-layers"></i> Account</a></li>
+                            <li><a href="index-analytic.html"><i class="icon-grid"></i> Analytic</a></li>
+                            <li><a href="index-covid.html"><i class="icon-earphones"></i> COVID</a></li>
+                            <li><a href="index-crypto.html"><i class="icon-support"></i> Crypto</a></li>
+                            <li><a href="index-ecommerce.html"><i class="icon-briefcase"></i> Ecommerce</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><i class="icon-organization mr-1"></i> Layout</a>
+                        <ul>
+                            <li class="dropdown"><a href="#"><i class="icon-options"></i>Horizontal</a>
+                                <ul class="sub-menu">
+                                    <li><a href="layout-horizontal.html"><i class="icon-energy"></i> Light</a></li>
+                                    <li><a href="layout-horizontal-semidark.html"><i class="icon-disc"></i> Semi Dark</a></li>
+                                    <li><a href="layout-horizontal-dark.html"><i class="icon-frame"></i> Dark</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#"><i class="icon-options-vertical"></i>Vertical</a>
+                                <ul class="sub-menu">
+                                    <li><a href="layout-vertical.html"><i class="icon-energy"></i> Light</a></li>
+                                    <li><a href="layout-vertical-semidark.html"><i class="icon-disc"></i> Semi Dark</a></li>
+                                    <li><a href="layout-vertical-dark.html"><i class="icon-frame"></i> Dark</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#"><i class="icon-grid"></i>Compact Menu</a>
+                                <ul class="sub-menu">
+                                    <li><a href="layout-compact.html"><i class="icon-energy"></i> Light</a></li>
+                                    <li><a href="layout-compact-semidark.html"><i class="icon-disc"></i> Semi Dark</a></li>
+                                    <li><a href="layout-compact-dark.html"><i class="icon-frame"></i> Dark</a></li>
+                                </ul>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#"><i class="icon-layers mr-1"></i> Web Apps</a>                  
+                        <ul>
+                            <li><a href="app-calendar.html"><i class="icon-calendar"></i> Calendar</a></li>
+                            <li><a href="app-chat.html"><i class="icon-speech"></i> Chats</a></li>
+                            <li><a href="app-to-do.html"><i class="icon-support"></i> Todo</a></li> 
+                            <li><a href="app-mail.html"><i class="icon-envelope"></i>Mailapp</a></li>
+                            <li><a href="app-filemanager.html"><i class="icon-folder"></i> File Manager</a></li>
+                            <li><a href="app-contactlist.html"><i class="icon-people"></i> Contact List</a></li>
+                            <li><a href="app-taskboard.html"><i class="icon-event"></i> Task Board</a></li>
+                            <li><a href="app-notes.html"><i class="icon-tag"></i> Notes</a></li> 
+                            <li><a href="app-invoicelist.html"><i class="icon-book-open"></i> Invoices</a></li>
+                        </ul>                   
+                    </li>
+
+                    <li class="dropdown"><a href="#"><i class="icon-cursor mr-1"></i> Elements</a>                 
+                        <ul>
+                            <li class="dropdown"><a href="#"><i class="icon-chart"></i>Charts</a>                                
+                                <ul class="sub-menu">                                
+                                    <li><a href="chart-morris.html"><i class="icon-energy"></i> Morris Chart</a></li>
+                                    <li><a href="chart-chartist.html"><i class="icon-disc"></i> Chartist js</a></li>
+                                    <li><a href="chart-echart.html"><i class="icon-frame"></i> eCharts</a></li>
+                                    <li><a href="chart-flot.html"><i class="icon-fire"></i> Flot Chart</a></li>
+                                    <li><a href="chart-knob.html"><i class="icon-shuffle"></i> Knob Chart</a></li>
+                                    <li class="dropdown"><a href="#" class="d-flex align-items-center"><i class="icon-control-pause"></i> Charts js</a>                                          
+                                        <ul class="sub-menu">
+                                            <li><a href="chartjs-bar.html"><i class="icon-energy"></i> Bar charts</a></li>
+                                            <li><a href="chartjs-line.html"><i class="icon-disc"></i> Line charts</a></li>
+                                            <li><a href="chartjs-area.html"><i class="icon-frame"></i> Area charts</a></li>
+                                            <li><a href="chartjs-other.html"><i class="icon-fire"></i> Doughnut, Pie, Polar charts</a></li>
+                                            <li><a href="chartjs-linear.html"><i class="icon-shuffle"></i> Linear scale</a></li>                                                                        
+                                        </ul>                                           
+                                    </li>
+                                    <li><a href="chart-sparkline.html"><i class="icon-graph"></i> Sparkline Chart</a></li>                            
+                                    <li><a href="chart-peity.html"><i class="icon-pie-chart"></i> Peity Chart</a></li>   
+                                    <li><a href="chart-google.html"><i class="icon-drawer"></i> Google Charts</a></li>
+                                    <li><a href="chart-apex.html"><i class="icon-magnet"></i> Apex Charts</a></li>
+                                    <li><a href="chart-c3.html"><i class="icon-hourglass"></i> C3 Charts</a></li>
+                                </ul>                               
+                            </li> 
+                            <li class="dropdown"><a href="#"><i class="icon-film"></i>Form</a>                              
+                                <ul class="sub-menu">
+                                    <li><a href="form-basic.html"><i class="icon-disc"></i> Basic Form</a></li>
+                                    <li><a href="form-layout.html"><i class="icon-cursor-move"></i> Form Layout</a></li>
+                                    <li><a href="form-validation.html"><i class="icon-star"></i> Form Validation</a></li>
+                                    <li class="dropdown"><a href="#" class="d-flex align-items-center"><i class="icon-film"></i> Form Elements</a>                                          
+                                        <ul class="sub-menu">
+                                            <li><a href="form-elements-switch.html"><i class="icon-energy"></i> Switch</a></li>
+                                            <li><a href="form-elements-checkbox.html"><i class="icon-disc"></i> Checkbox</a></li>
+                                            <li><a href="form-elements-radiobutton.html"><i class="icon-frame"></i> Radio</a></li>
+                                            <li><a href="form-elements-input.html"><i class="icon-fire"></i> Input</a></li>                                       
+                                        </ul>                                           
+                                    </li>
+                                    <li><a href="form-float-input.html"><i class="icon-symbol-male"></i> Float Input</a></li>
+                                    <li><a href="form-wizard.html"><i class="icon-loop"></i> Form Wizards</a></li>
+                                    <li><a href="form-upload.html"><i class="icon-pin"></i> Form Uploads</a></li>
+                                    <li><a href="form-mask.html"><i class="icon-check"></i> Form Mask</a></li>                            
+                                    <li><a href="form-dropzone.html"><i class="icon-present"></i> Form Dropzone</a></li>
+                                    <li><a href="form-icheck.html"><i class="icon-briefcase"></i> Icheck Controls</a></li>
+                                    <li><a href="form-cropper.html"><i class="icon-hourglass"></i> Image Cropper</a></li>
+                                    <li><a href="form-htmleditor.html"><i class="icon-graduation"></i> HTML5 Editor</a></li>
+                                    <li><a href="form-typehead.html"><i class="icon-puzzle"></i> Form Typehead</a></li>                            
+                                    <li><a href="form-xeditable.html"><i class="icon-cloud-upload"></i> Xeditable</a></li>
+                                    <li><a href="form-summernote.html"><i class="icon-ghost"></i> Summernote</a></li>
+                                </ul>  
+                            </li>
+                            <li class="dropdown"><a href="#"><i class="icon-menu"></i>Tables</a>                               
+                                <ul class="sub-menu">
+                                    <li><a href="table-basic.html"><i class="icon-grid"></i> Table Basic</a></li>
+                                    <li><a href="table-layout.html"><i class="icon-layers"></i> Table Layout</a></li>
+                                    <li><a href="table-datatable.html"><i class="icon-docs"></i> Datatable</a></li>
+                                    <li><a href="table-footable.html"><i class="icon-wallet"></i> Footable</a></li>
+                                    <li><a href="table-jsgrid.html"><i class="icon-folder"></i> Jsgrid</a></li>
+                                    <li><a href="table-responsive.html"><i class="icon-control-pause"></i> Table Responsive</a></li>                            
+                                    <li><a href="table-editable.html"><i class="icon-pencil"></i> Editable Table</a></li>
+                                </ul>   
+                            </li>
+                        </ul>                   
+                    </li>
+                    <li class="dropdown active"><a href="#"><i class="icon-magnet mr-1"></i> UI Component</a>                  
+                        <ul>
+                            <li class="dropdown"><a href="#"><i class="icon-screen-desktop"></i>UI Elements</a>                              
+                                <ul class="sub-menu">
+                                    <li><a href="ui-alert.html"><i class="icon-bell"></i> Alerts</a></li>
+                                    <li><a href="ui-badges.html"><i class="icon-badge"></i> Badges</a></li>
+                                    <li><a href="ui-buttons.html"><i class="icon-control-play"></i> Buttons</a></li>
+                                    <li><a href="ui-cards.html"><i class="icon-layers"></i> Cards</a></li>
+                                    <li><a href="ui-carousel.html"><i class="icon-picture"></i> Carousel</a></li>                           
+                                    <li><a href="ui-collapse.html"><i class="icon-arrow-up"></i> Collapse</a></li>
+                                    <li><a href="ui-dropdowns.html"><i class="icon-arrow-down"></i> Dropdowns</a></li>                          
+                                    <li><a href="ui-jumbotron.html"><i class="icon-screen-desktop"></i> Jumbotron</a></li>
+                                    <li><a href="ui-modals.html"><i class="icon-frame"></i> Modal</a></li> 
+                                    <li><a href="ui-pagination.html"><i class="icon-docs"></i> Pagination</a></li>  
+                                    <li><a href="ui-popoverandtooltip.html"><i class="icon-pin"></i> Popover &amp; Tooltip</a></li>
+                                    <li><a href="ui-progress.html"><i class="icon-graph"></i> Progress</a></li>
+                                    <li><a href="ui-scrollspy.html"><i class="icon-shuffle"></i> Scrollspy</a></li>
+                                    <li><a href="ui-select2.html"><i class="icon-wallet"></i> Select2</a></li>
+                                    <li><a href="ui-sweetalert.html"><i class="icon-fire"></i> Sweet Alert</a></li>
+                                    <li><a href="ui-timeline.html"><i class="icon-graduation"></i> Timeline</a></li>
+                                    <li><a href="ui-toastr.html"><i class="icon-layers"></i> Toastr</a></li>
+                                </ul>                              
+                            </li>
+                            <li class="dropdown active"><a href="#"><i class="icon-badge"></i>Icons</a>                            
+                                <ul class="sub-menu">
+                                    <li><a href="icon-materialdesign.html"><i class="icon-star"></i> Material Icon</a></li>
+                                    <li><a href="icon-font-awesome.html"><i class="icon-screen-tablet"></i> Font-awesome</a></li>
+                                    <li><a href="icon-themify.html"><i class="icon-plane"></i> Themify Icon</a></li>
+                                    <li><a href="icon-weather.html"><i class="icon-drawer"></i> Weather Icon</a></li>
+                                    <li class="active"><a href="icon-simple-line.html"><i class="icon-map"></i> Simple Line Icon</a></li>
+                                    <li><a href="icon-flag.html"><i class="icon-flag"></i> Flag Icon</a></li>
+                                    <li><a href="icon-ionicons.html"><i class="icon-rocket"></i> Ionicons Icon</a></li>
+                                    <li><a href="icon-icofont.html"><i class="icon-fire"></i> Icofont Icon</a></li>    
+                                    <li><a href="icon-linearicons.html"><i class="icon-list"></i> Linear</a></li>
+                                    <li><a href="icon-crypto.html"><i class="icon-diamond"></i> Crypto</a></li>
+                                </ul>                                 
+                            </li>
+                        </ul>                 
+                    </li>
+                    <li class="dropdown"><a href="#"><i class="icon-doc mr-1"></i> Pages</a>                  
+                        <ul>
+                            <li class="dropdown"><a href="#"><i class="icon-book-open"></i>Other Pages</a>                               
+                                <ul class="sub-menu">
+                                    <li><a href="page-lockscreen.html"><i class="icon-lock"></i> Lockscreen</a></li>
+                                    <li><a href="page-login.html"><i class="icon-login"></i> login</a></li>
+                                    <li><a href="page-register.html"><i class="icon-direction"></i> Register</a></li>
+                                    <li><a href="page-404.html"><i class="icon-crop"></i> 404 Page</a></li>
+                                    <li><a href="page-404-menu.html"><i class="icon-layers"></i> 404 Page With Menu</a></li>
+                                    <li><a href="page-blank.html"><i class="icon-frame"></i> Blank Page</a></li>
+                                    <li><a href="page-gallery.html"><i class="icon-layers"></i> Gallery</a></li>
+                                    <li><a href="page-pricing.html"><i class="icon-wallet"></i> Pricing</a></li>
+                                    <li><a href="page-contact-us.html"><i class="icon-wrench"></i> Contact us</a></li>
+                                </ul>                               
+                            </li>
+                            <li><a href="user-profile.html"><i class="icon-user"></i>Profile Pages</a></li>
+                        </ul>                   
+                    </li>
+                    <li class="dropdown"><a href="#"><i class="icon-support mr-1"></i> Extras</a>                   
+                        <ul>
+                            <li class="dropdown"><a href="#"><i class="icon-map"></i>Map</a>                               
+                                <ul class="sub-menu">
+                                    <li><a href="map-google.html"><i class="icon-map"></i> Google Map</a></li>
+                                    <li><a href="map-vector.html"><i class="icon-vector"></i> Vector Map</a></li>
+
+                                </ul>                               
+                            </li>
+                            <li class="dropdown"><a href="#"><i class="icon-pencil"></i>Blog</a>                               
+                                <ul class="sub-menu">
+                                    <li><a href="blog-list.html"><i class="icon-plus"></i> Blog List</a></li>
+                                    <li><a href="blog-single.html"><i class="icon-tag"></i> Blog Post</a></li>                            
+                                </ul>                               
+                            </li>  
+                            <li class="dropdown"><a href="#"><i class="icon-bag"></i>Ecommerce</a>                                 
+                                <ul class="sub-menu">
+                                    <li><a href="ecommerce-product-list.html"><i class="icon-grid"></i> Products List</a></li>
+                                    <li><a href="ecommerce-product-detail.html"><i class="icon-plus"></i> Product Detail</a></li>
+                                    <li><a href="ecommerce-cart.html"><i class="icon-badge"></i> Cart</a></li>
+                                    <li><a href="ecommerce-checkout.html"><i class="icon-plus"></i> Checkout</a></li>
+                                    <li><a href="ecommerce-orders.html"><i class="icon-basket"></i> Orders</a></li>
+                                    <li><a href="ecommerce-order-view.html"><i class="icon-equalizer"></i> Order View</a></li>                           
+
+                                </ul>                               
+                            </li>
+                        </ul>                    
+                    </li>
+                </ul>
+                <!-- END: Menu-->
+                <ol class="breadcrumb bg-transparent align-self-center m-0 p-0 ml-auto">
+                    <li class="breadcrumb-item"><a href="#">Application</a></li>
+                    <li class="breadcrumb-item active">Simple Line Icon</li>
+                </ol>
+            </div>
+        </div>
+        <!-- END: Main Menu-->
+
+        <!-- START: Main Content-->
+        <main>
+            <div class="container-fluid site-width">
+                <!-- START: Breadcrumbs-->
+                <div class="row ">
+                    <div class="col-12  align-self-center">
+                        <div class="sub-header mt-3 py-3 align-self-center d-sm-flex w-100 rounded">
+                            <div class="w-sm-100 mr-auto"><h4 class="mb-0">Simple Line Icon</h4></div>
+
+                            <ol class="breadcrumb bg-transparent align-self-center m-0 p-0">
+                                <li class="breadcrumb-item">Home</li>
+                                <li class="breadcrumb-item">Icon</li>
+                                <li class="breadcrumb-item active"><a href="#">Simple Line Icon</a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Breadcrumbs-->
+
+                <!-- START: Card Data-->
+                <div class="row">
+                    <div class="col-12  mt-3">                          
+                        <div class="card"> 
+
+                            <div class="card-body">
+                                <div class="text-center">
+
+
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-user icons"></i><span class="name">user</span> 
+                                            .icon-user
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-people icons"></i><span class="name">people</span> .icon-people
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-user-female icons"></i><span class="name">user-female</span> .icon-user-female
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-user-follow icons"></i><span class="name">user-follow</span> .icon-user-follow
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-user-following icons"></i><span class="name">user-following</span> .icon-user-following
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-user-unfollow icons"></i><span class="name">user-unfollow</span> .icon-user-unfollow
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-login icons"></i><span class="name">login</span> .icon-login
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-logout icons"></i><span class="name">logout</span> .icon-logout
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-emotsmile icons"></i><span class="name">emotsmile</span> .icon-emotsmile
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-phone icons"></i><span class="name">phone</span> .icon-phone
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-call-end icons"></i><span class="name">call-end</span> .icon-call-end
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-call-in icons"></i><span class="name">call-in</span> .icon-call-in
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-call-out icons"></i><span class="name">call-out</span> .icon-call-out
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-map icons"></i><span class="name">map</span> .icon-map
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-location-pin icons"></i><span class="name">location-pin</span> .icon-location-pin
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-direction icons"></i><span class="name">direction</span> .icon-direction
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-directions icons"></i><span class="name">directions</span> .icon-directions
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-compass icons"></i><span class="name">compass</span> .icon-compass
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-layers icons"></i><span class="name">layers</span> .icon-layers
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-menu icons"></i><span class="name">menu</span> .icon-menu
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-list icons"></i><span class="name">list</span> .icon-list
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-options-vertical icons"></i><span class="name">options-vertical</span> .icon-options-vertical
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-options icons"></i><span class="name">options</span> .icon-options
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-arrow-down icons"></i><span class="name">arrow-down</span> .icon-arrow-down
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-arrow-left icons"></i><span class="name">arrow-left</span> .icon-arrow-left
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-arrow-right icons"></i><span class="name">arrow-right</span> .icon-arrow-right
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-arrow-up icons"></i><span class="name">arrow-up</span> .icon-arrow-up
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-arrow-up-circle icons"></i><span class="name">arrow-up-circle</span> .icon-arrow-up-circle
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-arrow-left-circle icons"></i><span class="name">arrow-left-circle</span> .icon-arrow-left-circle
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-arrow-right-circle icons"></i><span class="name">arrow-right-circle</span> .icon-arrow-right-circle
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-arrow-down-circle icons"></i><span class="name">arrow-down-circle</span> .icon-arrow-down-circle
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-check icons"></i><span class="name">check</span> .icon-check
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-clock icons"></i><span class="name">clock</span> .icon-clock
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-plus icons"></i><span class="name">plus</span> .icon-plus
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-minus icons"></i><span class="name">minus</span> .icon-minus
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-close icons"></i><span class="name">close</span> .icon-close
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-event icons"></i><span class="name">event</span> .icon-event
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-exclamation icons"></i><span class="name">exclamation</span> .icon-exclamation
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-organization icons"></i><span class="name">organization</span> .icon-organization
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-trophy icons"></i><span class="name">trophy</span> .icon-trophy
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-screen-smartphone icons"></i><span class="name">screen-smartphone</span> .icon-screen-smartphone
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-screen-desktop icons"></i><span class="name">screen-desktop</span> .icon-screen-desktop
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-plane icons"></i><span class="name">plane</span> .icon-plane
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-notebook icons"></i><span class="name">notebook</span> .icon-notebook
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-mustache icons"></i><span class="name">mustache</span> .icon-mustache
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-mouse icons"></i><span class="name">mouse</span> .icon-mouse
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-magnet icons"></i><span class="name">magnet</span> .icon-magnet
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-energy icons"></i><span class="name">energy</span> .icon-energy
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-disc icons"></i><span class="name">disc</span> .icon-disc
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-cursor icons"></i><span class="name">cursor</span> .icon-cursor
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-cursor-move icons"></i><span class="name">cursor-move</span> .icon-cursor-move
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-crop icons"></i><span class="name">crop</span> .icon-crop
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-chemistry icons"></i><span class="name">chemistry</span> .icon-chemistry
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-speedometer icons"></i><span class="name">speedometer</span> .icon-speedometer
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-shield icons"></i><span class="name">shield</span> .icon-shield
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-screen-tablet icons"></i><span class="name">screen-tablet</span> .icon-screen-tablet
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-magic-wand icons"></i><span class="name">magic-wand</span> .icon-magic-wand
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-hourglass icons"></i><span class="name">hourglass</span> .icon-hourglass
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-graduation icons"></i><span class="name">graduation</span> .icon-graduation
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-ghost icons"></i><span class="name">ghost</span> .icon-ghost
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-game-controller icons"></i><span class="name">game-controller</span> .icon-game-controller
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-fire icons"></i><span class="name">fire</span> .icon-fire
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-eyeglass icons"></i><span class="name">eyeglass</span> .icon-eyeglass
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-envelope-open icons"></i><span class="name">envelope-open</span> .icon-envelope-open
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-envelope-letter icons"></i><span class="name">envelope-letter</span> .icon-envelope-letter
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-bell icons"></i><span class="name">bell</span> .icon-bell
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-badge icons"></i><span class="name">badge</span> .icon-badge
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-anchor icons"></i><span class="name">anchor</span> .icon-anchor
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-wallet icons"></i><span class="name">wallet</span> .icon-wallet
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-vector icons"></i><span class="name">vector</span> .icon-vector
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-speech icons"></i><span class="name">speech</span> .icon-speech
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-puzzle icons"></i><span class="name">puzzle</span> .icon-puzzle
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-printer icons"></i><span class="name">printer</span> .icon-printer
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-present icons"></i><span class="name">present</span> .icon-present
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-playlist icons"></i><span class="name">playlist</span> .icon-playlist
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-pin icons"></i><span class="name">pin</span> .icon-pin
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-picture icons"></i><span class="name">picture</span> .icon-picture
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-handbag icons"></i><span class="name">handbag</span> .icon-handbag
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-globe-alt icons"></i><span class="name">globe-alt</span> .icon-globe-alt
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-globe icons"></i><span class="name">globe</span> .icon-globe
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-folder-alt icons"></i><span class="name">folder-alt</span> .icon-folder-alt
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-folder icons"></i><span class="name">folder</span> .icon-folder
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-film icons"></i><span class="name">film</span> .icon-film
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-feed icons"></i><span class="name">feed</span> .icon-feed
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-drop icons"></i><span class="name">drop</span> .icon-drop
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-drawer icons"></i><span class="name">drawer</span> .icon-drawer
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-docs icons"></i><span class="name">docs</span> .icon-docs
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-doc icons"></i><span class="name">doc</span> .icon-doc
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-diamond icons"></i><span class="name">diamond</span> .icon-diamond
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-cup icons"></i><span class="name">cup</span> .icon-cup
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-calculator icons"></i><span class="name">calculator</span> .icon-calculator
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-bubbles icons"></i><span class="name">bubbles</span> .icon-bubbles
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-briefcase icons"></i><span class="name">briefcase</span> .icon-briefcase
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-book-open icons"></i><span class="name">book-open</span> .icon-book-open
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-basket-loaded icons"></i><span class="name">basket-loaded</span> .icon-basket-loaded
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-basket icons"></i><span class="name">basket</span> .icon-basket
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-bag icons"></i><span class="name">bag</span> .icon-bag
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-action-undo icons"></i><span class="name">action-undo</span> .icon-action-undo
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-action-redo icons"></i><span class="name">action-redo</span> .icon-action-redo
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-wrench icons"></i><span class="name">wrench</span> .icon-wrench
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-umbrella icons"></i><span class="name">umbrella</span> .icon-umbrella
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-trash icons"></i><span class="name">trash</span> .icon-trash
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-tag icons"></i><span class="name">tag</span> .icon-tag
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-support icons"></i><span class="name">support</span> .icon-support
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-frame icons"></i><span class="name">frame</span> .icon-frame
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-size-fullscreen icons"></i><span class="name">size-fullscreen</span> .icon-size-fullscreen
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-size-actual icons"></i><span class="name">size-actual</span> .icon-size-actual
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-shuffle icons"></i><span class="name">shuffle</span> .icon-shuffle
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-share-alt icons"></i><span class="name">share-alt</span> .icon-share-alt
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-share icons"></i><span class="name">share</span> .icon-share
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-rocket icons"></i><span class="name">rocket</span> .icon-rocket
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-question icons"></i><span class="name">question</span> .icon-question
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-pie-chart icons"></i><span class="name">pie-chart</span> .icon-pie-chart
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-pencil icons"></i><span class="name">pencil</span> .icon-pencil
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-note icons"></i><span class="name">note</span> .icon-note
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-loop icons"></i><span class="name">loop</span> .icon-loop
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-home icons"></i><span class="name">home</span> .icon-home
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-grid icons"></i><span class="name">grid</span> .icon-grid
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-graph icons"></i><span class="name">graph</span> .icon-graph
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-microphone icons"></i><span class="name">microphone</span> .icon-microphone
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-music-tone-alt icons"></i><span class="name">music-tone-alt</span> .icon-music-tone-alt
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-music-tone icons"></i><span class="name">music-tone</span> .icon-music-tone
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-earphones-alt icons"></i><span class="name">earphones-alt</span> .icon-earphones-alt
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-earphones icons"></i><span class="name">earphones</span> .icon-earphones
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-equalizer icons"></i><span class="name">equalizer</span> .icon-equalizer
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-like icons"></i><span class="name">like</span> .icon-like
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-dislike icons"></i><span class="name">dislike</span> .icon-dislike
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-control-start icons"></i><span class="name">control-start</span> .icon-control-start
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-control-rewind icons"></i><span class="name">control-rewind</span> .icon-control-rewind
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-control-play icons"></i><span class="name">control-play</span> .icon-control-play
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-control-pause icons"></i><span class="name">control-pause</span> .icon-control-pause
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-control-forward icons"></i><span class="name">control-forward</span> .icon-control-forward
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-control-end icons"></i><span class="name">control-end</span> .icon-control-end
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-volume-1 icons"></i><span class="name">volume-1</span> .icon-volume-1
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-volume-2 icons"></i><span class="name">volume-2</span> .icon-volume-2
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-volume-off icons"></i><span class="name">volume-off</span> .icon-volume-off
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-calendar icons"></i><span class="name">calendar</span> .icon-calendar
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-bulb icons"></i><span class="name">bulb</span> .icon-bulb
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-chart icons"></i><span class="name">chart</span> .icon-chart
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-ban icons"></i><span class="name">ban</span> .icon-ban
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-bubble icons"></i><span class="name">bubble</span> .icon-bubble
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-camrecorder icons"></i><span class="name">camrecorder</span> .icon-camrecorder
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-camera icons"></i><span class="name">camera</span> .icon-camera
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-cloud-download icons"></i><span class="name">cloud-download</span> .icon-cloud-download
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-cloud-upload icons"></i><span class="name">cloud-upload</span> .icon-cloud-upload
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-envelope icons"></i><span class="name">envelope</span> .icon-envelope
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-eye icons"></i><span class="name">eye</span> .icon-eye
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-flag icons"></i><span class="name">flag</span> .icon-flag
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-heart icons"></i><span class="name">heart</span> .icon-heart
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-info icons"></i><span class="name">info</span> .icon-info
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-key icons"></i><span class="name">key</span> .icon-key
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-link icons"></i><span class="name">link</span> .icon-link
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-lock icons"></i><span class="name">lock</span> .icon-lock
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-lock-open icons"></i><span class="name">lock-open</span> .icon-lock-open
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-magnifier icons"></i><span class="name">magnifier</span> .icon-magnifier
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-magnifier-add icons"></i><span class="name">magnifier-add</span> .icon-magnifier-add
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-magnifier-remove icons"></i><span class="name">magnifier-remove</span> .icon-magnifier-remove
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-paper-clip icons"></i><span class="name">paper-clip</span> .icon-paper-clip
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-paper-plane icons"></i><span class="name">paper-plane</span> .icon-paper-plane
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-power icons"></i><span class="name">power</span> .icon-power
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-refresh icons"></i><span class="name">refresh</span> .icon-refresh
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-reload icons"></i><span class="name">reload</span> .icon-reload
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-settings icons"></i><span class="name">settings</span> .icon-settings
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-star icons"></i><span class="name">star</span> .icon-star
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-symbol-female icons"></i><span class="name">symbol-female</span> .icon-symbol-female
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-symbol-male icons"></i><span class="name">symbol-male</span> .icon-symbol-male
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-target icons"></i><span class="name">target</span> .icon-target
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-credit-card icons"></i><span class="name">credit-card</span> .icon-credit-card
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-paypal icons"></i><span class="name">paypal</span> .icon-paypal
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-tumblr icons"></i><span class="name">social-tumblr</span> .icon-social-tumblr
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-twitter icons"></i><span class="name">social-twitter</span> .icon-social-twitter
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-facebook icons"></i><span class="name">social-facebook</span> .icon-social-facebook
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-instagram icons"></i><span class="name">social-instagram</span> .icon-social-instagram
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-linkedin icons"></i><span class="name">social-linkedin</span> .icon-social-linkedin
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-pinterest icons"></i><span class="name">social-pinterest</span> .icon-social-pinterest
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-github icons"></i><span class="name">social-github</span> .icon-social-github
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-google icons"></i><span class="name">social-google</span> .icon-social-google
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-reddit icons"></i><span class="name">social-reddit</span> .icon-social-reddit
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-skype icons"></i><span class="name">social-skype</span> .icon-social-skype
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-dribbble icons"></i><span class="name">social-dribbble</span> .icon-social-dribbble
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-behance icons"></i><span class="name">social-behance</span> .icon-social-behance
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-foursqare icons"></i><span class="name">social-foursqare</span> .icon-social-foursqare
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-soundcloud icons"></i><span class="name">social-soundcloud</span> .icon-social-soundcloud
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-spotify icons"></i><span class="name">social-spotify</span> .icon-social-spotify
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-stumbleupon icons"></i><span class="name">social-stumbleupon</span> .icon-social-stumbleupon
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-youtube icons"></i><span class="name">social-youtube</span> .icon-social-youtube
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-dropbox icons"></i><span class="name">social-dropbox</span> .icon-social-dropbox
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-vkontakte icons"></i><span class="name">social-vkontakte</span> .icon-social-vkontakte
+                                        </div>
+                                    </div>
+                                    <div class="font-icon-list p-2 border  mx-1 mb-2">
+                                        <div class="preview">
+                                            <i class="icon-social-steam icons"></i><span class="name">social-steam</span> .icon-social-steam
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                             
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- END: Card DATA-->
+            </div>
+        </main>
+        <!-- END: Content-->
+
+
+
+        <!-- START: Footer-->
+        <footer class="site-footer">
+            2020 © PICK
+        </footer>
+        <!-- END: Footer-->
+
+
+        <!-- START: Back to top-->
+        <a href="#" class="scrollup text-center"> 
+            <i class="icon-arrow-up"></i>
+        </a>
+        <!-- END: Back to top-->
+
+        <!-- START: Template JS-->
+        <script src="dist/vendors/jquery/jquery-3.3.1.min.js"></script>
+        <script src="dist/vendors/jquery-ui/jquery-ui.min.js"></script>
+        <script src="dist/vendors/moment/moment.js"></script>
+        <script src="dist/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>    
+        <script src="dist/vendors/slimscroll/jquery.slimscroll.min.js"></script>
+
+        <!-- END: Template JS-->
+
+        <!-- START: APP JS-->
+        <script src="dist/js/app.js"></script>
+        <!-- END: APP JS-->
+    </body>
+    <!-- END: Body-->
+</html>
